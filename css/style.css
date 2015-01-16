@@ -280,7 +280,7 @@ ul{
   margin: 0 0 4px -15px;
 }
 
-.side-nav li:first-child a:hover, .side-nav li:first-child a:focus{
+html.textshadow .side-nav li:first-child a:hover, html.textshadow .side-nav li:first-child a:focus{
   text-shadow: #BBB 1px 1px;
   color: #000;
 }
