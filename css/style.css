@@ -15,7 +15,7 @@ ul{
 }
 
 .fill-container{
-  margin: 0 -30px;
+  width: 100%;
 }
 
 .strong{
@@ -44,17 +44,13 @@ ul{
 }
 
 .container{
-  width: 900px;
-  margin: 20px 10px 0 20px;
-  padding: 0 30px 30px;
+  width: 960px;
+  margin: 20px auto;
+  padding: 0 0 30px;
 
 }
 
 /* header */
-.header, .main{
-  width: 75%;
-
-}
 
 .page-title{
   background-color: #2ECC71;
@@ -79,12 +75,12 @@ ul{
 .main{
   padding: 0 30px 30px;
   background-color: #ECF0F1;
-  float: left;
   margin-right: 15px;
 }
 
 .article-header{
   padding-top: 30px;
+  margin-top: 0;
 }
 
 .main p{
@@ -150,9 +146,12 @@ ul{
   width: 100%;
 }
 
-.article-image{
-  height: 100px;
+.gallery{
+  text-align: center;
+}
 
+.gallery>*{
+  margin: 0 10px;
 }
 
 /* ordered list */
@@ -257,33 +256,9 @@ ul{
   margin-left: 0;
 }
 
-.side-nav{
-  float: left;
-  background-color: #ECF0F1;
-  line-height: 25px;
-  border-bottom: 5px solid #454444;
-}
-
-.side-nav ul{
-  padding: 0 30px 0 30px;
-  margin: 10px 0;
-}
-
-.side-nav li:first-child a{
-  font-weight: bold;
-  color: #000;
-  margin: 0 0 4px -15px;
-}
-
-html.textshadow .side-nav li:first-child a:hover, html.textshadow .side-nav li:first-child a:focus{
-  text-shadow: #BBB 1px 1px;
-  color: #000;
-}
-
-.side-nav li a{
-  color: #6B7881;
-}
-
-.side-nav li a:hover, .side-nav li a:focus{
-  color: #3e4549;
+/* media queries */
+@media (max-width: 960px){
+  .container{
+    width: 90%;
+  }
 }
