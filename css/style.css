@@ -200,17 +200,22 @@ ul{
   width: 30px;
 }
 
+.comment-form ul{
+  padding: 0;
+}
+
 .comment-form-label{
   width: 20%;
-  margin: 0 5px 15px 0;
   display: inline-block;
   text-align: right;
+  vertical-align: middle;
 }
 
 .comment-form-label + input{
+  margin: 0 0 15px 5px;
   display: inline-block;
   height: 30px;
-  width: 75%;
+  width: 70%;
 }
 
 .comment-form-comment{
