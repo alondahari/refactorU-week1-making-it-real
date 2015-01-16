@@ -9,19 +9,19 @@
 
   <body>
     <div class="container">
-      <header class="page-header fill-container">
-        <h1>My Website</h1>
+      <header class="header fill-container">
+        <h1 class="page-title">My Website</h1>
+
+        <nav>
+          <ul class="navbar-main uppercase">
+            <li><a href="">Home</a></li>
+            <li><a href="">All Posts</a></li>
+            <li><a href="">About Us</a></li>
+          </ul>
+        </nav>
       </header>
 
-      <nav>
-        <ul class="navbar-main fill-container uppercase">
-          <li><a href="">Home</a></li>
-          <li><a href="">All Posts</a></li>
-          <li><a href="">About Us</a></li>
-        </ul>
-      </nav>
-
-      <article class="page-article">
+      <article class="main fill-container">
         <section>
           <h2 class="article-header">Article Title</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde asperiores, natus aspernatur quia magni quos vel eveniet velit in officia atque fugit consectetur accusantium porro maiores mollitia autem, hic necessitatibus!</p>
@@ -77,14 +77,12 @@
             <li><p><strong>Profit:</strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos pariatur qui eius voluptas quo ducimus possimus quidem enim provident dolore omnis, mollitia molestias accusantium aliquid, repudiandae quibusdam nemo. Reiciendis, quae.</p></li>
           </ol>
         </section>
-      </article>
 
       <footer class="post-footer dim">
         <p>Posted by <span class="strong">Author</span> under <span class="strong">Web > Dev</span> on <span class="strong">January 13, 2014</span></p>
       </footer>
 
-      <article>
-        <section class="article-comments article-header">
+        <aside class="article-comments article-header">
           <h2>Comments</h2>
           <h4 class="line-through uppercase dim">User Info</h4>
           <form action="index.html" method="post">
@@ -110,28 +108,31 @@
             <textarea name="comment" id="comment-form-comment" class="comment-form-comment"></textarea>
             <input type="submit" class="button button-submit uppercase full-width">
           </form>
-        </section>
 
-        <section>
           <div class="media-block">
             <img class="media-block-avatar" src="http://placehold.it/50x50" alt="Avatar" class="media-img">
             <h3 class="media-block-header">User 1</h3>
             <date class="dim italic">January 13 2014</date>
-              <p class="media-block-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam iste culpa quidem voluptas, neque ratione iusto saepe laudantium ea quis voluptates, nisi nesciunt porro harum temporibus earum cupiditate vero ad.</p>
-
+            <div class="media-block-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam iste culpa quidem voluptas, neque ratione iusto saepe laudantium ea quis voluptates, nisi nesciunt porro harum temporibus earum cupiditate vero ad.</p>
+            </div>
             <div class="media-block-responses">
               <div class="media-block">
                 <img class="media-block-avatar" src="http://placehold.it/50x50" alt="Avatar" class="media-img">
                 <h3 class="media-block-header">User 1</h3>
                 <date class="dim italic">January 13 2014</date>
-                  <p class="media-block-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam iste culpa quidem voluptas, neque ratione iusto saepe laudantium ea quis voluptates, nisi nesciunt porro harum temporibus earum cupiditate vero ad.</p>
+                <div class="media-block-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam iste culpa quidem voluptas, neque ratione iusto saepe laudantium ea quis voluptates, nisi nesciunt porro harum temporibus earum cupiditate vero ad.</p>
+                </div>
               </div>
 
               <div class="media-block">
-                  <img class="media-block-avatar" src="http://placehold.it/50x50" alt="Avatar" class="media-img">
-                  <h3 class="media-block-header">User 3</h3>
-                  <date class="dim italic">January 13 2014</date>
-                  <p class="media-block-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam iste culpa quidem voluptas, neque ratione iusto saepe laudantium ea quis voluptates, nisi nesciunt porro harum temporibus earum cupiditate vero ad.</p>
+                <img class="media-block-avatar" src="http://placehold.it/50x50" alt="Avatar" class="media-img">
+                <h3 class="media-block-header">User 3</h3>
+                <date class="dim italic">January 13 2014</date>
+                <div class="media-block-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam iste culpa quidem voluptas, neque ratione iusto saepe laudantium ea quis voluptates, nisi nesciunt porro harum temporibus earum cupiditate vero ad.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -139,26 +140,28 @@
               <img class="media-block-avatar" src="http://placehold.it/50x50" alt="Avatar" class="media-img">
               <h3 class="media-block-header">User 2</h3>
               <date class="dim italic">January 13 2014</date>
-              <p class="media-block-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam iste culpa quidem voluptas, neque ratione iusto saepe laudantium ea quis voluptates, nisi nesciunt porro harum temporibus earum cupiditate vero ad.</p>
+            <div class="media-block-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam iste culpa quidem voluptas, neque ratione iusto saepe laudantium ea quis voluptates, nisi nesciunt porro harum temporibus earum cupiditate vero ad.</p>
           </div>
-        </section>
+        </aside>
       </article>
-    </div>
-    <aside>
-      <ul>
-        <li>Recent Posts</li>
-        <li>Another Post</li>
-        <li>A Cool Story</li>
-        <li>Useful Tips and Tricks</li>
-      </ul>
-      <ul>
-        <li>Category</li>
-        <li>Web</li>
-        <li>Dev</li>
-        <li>CSS</li>
-      </ul>
-    </aside>
 
+      <nav class="side-nav">
+        <ul>
+          <li><a href="">Recent Posts</a></li>
+          <li><a href="">Another Post</a></li>
+          <li><a href="">A Cool Story</a></li>
+          <li><a href="">Useful Tips and Tricks</a></li>
+        </ul>
+        <ul>
+          <li><a href="">Categories</a></li>
+          <li><a href="">Web</a></li>
+          <li><a href="">Dev</a></li>
+          <li><a href="">CSS</a></li>
+        </ul>
+      </nav>
+
+    </div> <!-- end of container -->
 
   </body>
 </html>
