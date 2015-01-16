@@ -15,8 +15,8 @@ ul{
   padding: 0;
 }
 
-.fill-container{
-  width: 100%;
+img{
+  max-width: 100%;
 }
 
 .strong{
@@ -34,6 +34,10 @@ ul{
   padding: 7px 25px;
   background-color: #3498DB;
   border: none;
+}
+
+.fill-container{
+  width: 100%;
 }
 
 .button:hover, .button:focus{
@@ -145,17 +149,20 @@ ul{
 }
 
 /* image */
-.full-width{
-  width: 100%;
+
+.article-image{
+
 }
 
 .gallery{
   text-align: center;
+  overflow: hidden;
 }
 
-.gallery>*{
-  margin: 0 10px;
-  height: 100%;
+.gallery-column{
+  width: 25%;
+  float: left;
+  padding: 0 10px;
 }
 
 /* ordered list */
@@ -278,5 +285,15 @@ ul{
     display: block;
     border-bottom: 3px solid #2C3E50;
     width: 100%;
+  }
+}
+
+@media (max-width: 500px){
+  .gallery-column{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .code-block{
+    padding: 10px;
   }
 }
