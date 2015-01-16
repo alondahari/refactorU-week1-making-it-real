@@ -232,17 +232,12 @@ ul{
 
 /* comment stream */
 .media-block{
-  position: relative;
 
 }
 
 .media-block-responses{
-  left: 30px;
+  margin-left: 30px;
   border-left: 1px solid silver;
-  position: relative;
-}
-
-.media-block-responses .media-block{
   padding-left: 15px;
 }
 
@@ -258,8 +253,8 @@ ul{
   margin-bottom: 5px;
 }
 
-.media-block-body{
-  margin: 25px 0;
+.media-block-body p{
+  margin-left: 0;
 }
 
 .side-nav{
